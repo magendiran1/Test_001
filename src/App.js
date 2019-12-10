@@ -12,9 +12,10 @@ import Higer from './Component/HOC/higer';
 import Counter from './Component/Conditional/RenderProsp/Counter';
 import Clickcounter from './Component/Conditional/RenderProsp/Clickcounter';
 import HoverCounter from './Component/Conditional/RenderProsp/Hovercounter';
-import Hai1 from './Component/Propschildren.js/children';
+import Hai1 from './Component/Propschildren/children';
 // import Clickcounter from './Component/Conditional/RenderProsp/Clickcounter';
-// import Fragment from './Component/Fragment';
+import Fragment from './Component/Fragment';
+import Demo from './Component/MultipleClass/demo';
 // import learn from './Component/Lifes/Learn';
 // import FunctionClick from './Component/Functionclick';
 // import Clickinclass from './Component/ClassClick';
@@ -39,7 +40,7 @@ function App() {
 <Mounting />
 <Child /> */}
 {/* <Learn /> */}
-    {/* <Fragment /> */}
+    <Fragment />
        {/* <ParentComp />  */}
    {/* <Refs /> */}
  
@@ -54,6 +55,7 @@ function App() {
 <Counter render={(count,incrementCount)=>(<Clickcounter count={count} incrementCount={incrementCount} />)} />   
 <Counter render={(count,incrementCount)=>(<HoverCounter count={count} incrementCount={incrementCount} />)} />   
 <Hai1 />
+<Demo />
 </div>
   );
 }
