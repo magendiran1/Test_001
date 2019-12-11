@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
-import props from './props';
+import Props from './props';
 
 export class Hai1 extends Component {
     render() {
         return (
             <div>
-                <props>hai jhgjhgj
+                <Props>hai jhgjhgj
                     <h1>jhggh</h1>
                     <h2>gfhfh</h2>
-                </props>
+                </Props>
             </div>
         )
     }

@@ -1,23 +1,22 @@
 import React, { Component } from 'react'
 
-class Fir extends Component {
+export  class FirstComp extends Component {
     render() {
         return (
             <div>
-<p> hi heloo this one first class Component</p>                
+                <h>This is first class Component </h>
             </div>
         )
     }
 }
 
-class  Sec extends Component{
+
+export class SecondComp extends Component{
     render(){
         return(
             <div>
-                <p>Hi  this is second class Component</p>
+                <h1>This is secong class Component</h1>
             </div>
         )
     }
 }
-
-export {Fir,Sec};
