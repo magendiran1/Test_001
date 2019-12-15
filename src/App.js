@@ -16,6 +16,7 @@ import Hai1 from './Component/Propschildren/children';
 // import Clickcounter from './Component/Conditional/RenderProsp/Clickcounter';
 import Fragment from './Component/Fragment';
 import Demo from './Component/MultipleClass/demo';
+import Count from  './Context/count'
 // import learn from './Component/Lifes/Learn';
 // import FunctionClick from './Component/Functionclick';
 // import Clickinclass from './Component/ClassClick';
@@ -56,6 +57,7 @@ function App() {
 <Counter render={(count,incrementCount)=>(<HoverCounter count={count} incrementCount={incrementCount} />)} />   
 <Hai1 />
 <Demo />
+<Count />
 </div>
   );
 }
