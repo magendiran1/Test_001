@@ -6,6 +6,7 @@ export default (props)=>{
         <>
 <h1>Hello Component {props.counts} </h1>
       <Test count={props.counts} />
+      <h1>Hi This context </h1>
         </>
     )
 }
