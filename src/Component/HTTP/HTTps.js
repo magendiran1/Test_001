@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axois from 'axios'
+
 class Getmethod extends Component {
     constructor(props) {
         super(props);
@@ -26,7 +27,7 @@ class Getmethod extends Component {
                 <h2>post method </h2>
                 {
                     Post.length ?
-                    Post.map(Post => <div key={Post.id}>{Post.title}</div>) :
+                Post.map(Post => <div key={Post.id}>{Post.title}{Post.body}</div>) :
                     null
                 }
             </div>
