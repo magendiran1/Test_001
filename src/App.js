@@ -16,7 +16,7 @@ import Hai1 from './Component/Propschildren/children';
 // import Clickcounter from './Component/Conditional/RenderProsp/Clickcounter';
 import Fragment from './Component/Fragment';
 import Demo from './Component/MultipleClass/demo';
-import Count from './Context/Count'
+import Count from './Context/count'
 import Getmethod from './Component/HTTP/HTTps'
 // import learn from './Component/Lifes/Learn';
 // import FunctionClick from './Component/Functionclick';

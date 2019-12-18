@@ -6,7 +6,8 @@ class Getmethod extends Component {
         super(props);
         
     this.state ={
-        Post :[]
+        Post :[],
+        errorMsg : ''
     }
     }
     componentDidMount(){
@@ -17,11 +18,12 @@ class Getmethod extends Component {
         })
         .catch(error =>{
             console.log(error)
+            this.setState({errorMsg : 'Error while Retreiving data'})
         })
     }
 
     render() {
-        const {Post}=this.state
+        const {Post,errorMsg}=this.state
         return (
             <div>
                 <h2>post method </h2>
@@ -30,6 +32,7 @@ class Getmethod extends Component {
                 Post.map(Post => <div key={Post.id}>{Post.title}{Post.body}</div>) :
                     null
                 }
+                {errorMsg ? <div>{errorMsg}</div> :null}
             </div>
         );
     }
