@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import axois from 'axios';
 
 class Post extends Component {
     constructor() {
@@ -18,6 +19,15 @@ changHandler =e =>{
 submitHandler =e =>{
     e.preventDefault()
     console.log(this.state)
+        axois.Post('http://jsonplaceholder.typicode.com/posts',this.state)
+        .then(Response=>{
+            console.log(Response)
+        })
+        .catch(error =>{
+            console.log(error)
+        }
+        )
+    
 }
     render() {
         const { userid, title, body } = this.state
