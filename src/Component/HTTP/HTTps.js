@@ -13,11 +13,11 @@ class Getmethod extends Component {
     componentDidMount(){
         axois.get('http://jsonplaceholder.typicode.com/posts')
         .then(Response=>{
-            console.log(Response)
+            // console.log(Response)
             this.setState({Post:Response.data})
         })
         .catch(error =>{
-            console.log(error)
+            // console.log(error)
             this.setState({errorMsg : 'Error while Retreiving data'})
         })
     }

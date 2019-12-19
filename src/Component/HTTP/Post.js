@@ -9,11 +9,21 @@ class Post extends Component {
             body: ''
         }
     }
+changHandler =e =>{
+    this.setState({
+        [e.target.name] :e.target.value
+    })
+}
+
+submitHandler =e =>{
+    e.preventDefault()
+    console.log(this.state)
+}
     render() {
         const { userid, title, body } = this.state
         return (
             <div>
-                <form>
+                <form onSubmit={this.submitHandler}>
                     <div>
                         <input type="text" name="userid" value={userid} onChange={this.changHandler} />
                     </div>
@@ -23,7 +33,7 @@ class Post extends Component {
                     <div>
                         <input type="text" name="body" value={body} onChange={this.changHandler} />
                     </div>
-
+<button type="submit">submit</button>
                 </form>
             </div>
         );
