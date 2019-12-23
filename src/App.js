@@ -19,6 +19,10 @@ import Demo from './Component/MultipleClass/demo';
 import Count from './Context/Count'
 import Getmethod from './Component/HTTP/HTTps'
 import Post from './Component/HTTP/Post'
+import HookCounter from './Hooks/usestate'
+import Hookcountertwo from './Hooks/Hookcountertwo'
+import HookObjects from './Hooks/HookObjects';
+import HookArrays from './Hooks/HookArrays';
 // import learn from './Component/Lifes/Learn';
 // import FunctionClick from './Component/Functionclick';
 // import Clickinclass from './Component/ClassClick';
@@ -62,6 +66,10 @@ function App() {
 <Count />
 <Getmethod />
 <Post />
+<HookCounter />
+<Hookcountertwo />
+<HookObjects />
+<HookArrays />
 </div>
   );
 }
