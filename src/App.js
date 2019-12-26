@@ -23,6 +23,9 @@ import HookCounter from './Hooks/usestate'
 import Hookcountertwo from './Hooks/Hookcountertwo'
 import HookObjects from './Hooks/HookObjects';
 import HookArrays from './Hooks/HookArrays';
+import HookCleanup from './Hooks/HookCleanup';
+import HookFetchingdata from './Hooks/HookFetchingdata';
+// import HookUseeffect from './Hooks/HooksUseeffect';
 // import learn from './Component/Lifes/Learn';
 // import FunctionClick from './Component/Functionclick';
 // import Clickinclass from './Component/ClassClick';
@@ -70,6 +73,9 @@ function App() {
 <Hookcountertwo />
 <HookObjects />
 <HookArrays />
+{/* <HookUseeffect /> */}
+<HookCleanup />
+<HookFetchingdata />
 </div>
   );
 }
