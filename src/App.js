@@ -25,6 +25,7 @@ import HookObjects from './Hooks/HookObjects';
 import HookArrays from './Hooks/HookArrays';
 import HookCleanup from './Hooks/HookCleanup';
 import HookFetchingdata from './Hooks/HookFetchingdata';
+import HookFetchingdatabyuser from './Hooks/HooksIndiviualpost'
 // import HookUseeffect from './Hooks/HooksUseeffect';
 // import learn from './Component/Lifes/Learn';
 // import FunctionClick from './Component/Functionclick';
@@ -76,6 +77,7 @@ function App() {
 {/* <HookUseeffect /> */}
 <HookCleanup />
 <HookFetchingdata />
+<HookFetchingdatabyuser />
 </div>
   );
 }

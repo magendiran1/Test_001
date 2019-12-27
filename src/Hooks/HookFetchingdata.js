@@ -27,4 +27,6 @@ setposts(res.data)
     )
 }
 
+// Below code we will find the indiviual post
+
 export default HookFetchingdata
