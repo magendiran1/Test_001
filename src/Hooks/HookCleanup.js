@@ -15,4 +15,4 @@ function HookCleanup() {
 export default HookCleanup
 
 
-//  why we create this component means in hook how to use the component didmount    
+//  why we create this component means in hook how to use the component willunmount     
