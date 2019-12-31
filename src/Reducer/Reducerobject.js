@@ -1,24 +1,26 @@
 import React,{useReducer} from 'react'
 
-const intialState=0
+const intialState={
+    firstcount :0
+}
 // //  from here reducer is function in javascript it accept two values and return one values
 // const reducer=(state,action)=>{
 // return newState
 // }
 
  export const reducer =(state,action)=>{
-switch(action){
+switch(action.type ){
 case "increment":
-    return state +1
+    return {firstcount: state.firstcount +1}
     case "decrement":
-        return state -1
+        return{firstcount: state.firstcount -1}
         case "reset":
             return intialState
             default :
             return state
 }
 }
-function HookReducer() {
+function Reducerobject() {
 //   from here you need to know useReducer is a function its accept two argument one is (reducer) its function 
 // another one is intialstate
 //  inga pathiyana reducer kita vadhu rendu parameter iruku 
@@ -26,13 +28,13 @@ function HookReducer() {
 const [count ,dispatch]= useReducer(reducer,intialState)
     return (
         <div>
-            <h1> {count}</h1>
-            <button onClick={()=>dispatch("increment")}>Increment</button>
-            <button onClick={()=>dispatch("decrement")}>Decrement</button>
-            <button onClick={()=>dispatch("reset")}>Reset</button>
+            <h1> {count.firstcount}</h1>
+            <button onClick={()=>dispatch({type:"increment"})}>Increment</button>
+            <button onClick={()=>dispatch({type:"decrement"})}>Decrement</button>
+            <button onClick={()=>dispatch({type:"reset"})}>Reset</button>
 
         </div>
     )
 }
 
-export default HookReducer
+export default Reducerobject

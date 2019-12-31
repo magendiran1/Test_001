@@ -28,6 +28,7 @@ import HookFetchingdata from './Hooks/HookFetchingdata';
 import HookFetchingdatabyuser from './Hooks/HooksIndiviualpost'
 import ContextA from './HooksContext/ContextA';
 import HookReducer from './Reducer/HookReducer';
+import Reducerobject from './Reducer/Reducerobject';
 // import HookUseeffect from './Hooks/HooksUseeffect';
 // import learn from './Component/Lifes/Learn';
 // import FunctionClick from './Component/Functionclick';
@@ -82,6 +83,7 @@ function App() {
 <HookFetchingdatabyuser />
 <ContextA />
 <HookReducer />
+<Reducerobject />
 </div>
   );
 }
