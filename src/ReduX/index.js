@@ -15,3 +15,33 @@ console.log("Hi magendiran")
 // 3.Allow update  to be updated via dispatch(action)
 // 4.Register listeners via subscribe 
 // 5. Handles Unregistering of listener via function returned by subscribe 
+
+// Reducer
+// 1.specify How The app's state changes In response to action  sent to the store 
+// (previousstate,action)=>newstate
+
+const Buy_cake ='Buy_cake'
+
+ function Buycake(){
+     return{
+                  type: Buy_cake,
+            info :'First redux action'
+      
+     }
+ }
+
+//  (prevState,action)=NewState
+
+const Inittialstate ={
+    cake:10
+}
+
+const reducer =(state=Inittialstate,action)=>{
+switch(action.type){
+    case Buy_cake:return{
+        ...state,
+        cake :cake -1
+    }
+    default :return state
+}
+}
