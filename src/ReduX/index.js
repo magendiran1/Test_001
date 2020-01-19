@@ -1,5 +1,7 @@
-console.log("Hi magendiran")
+// console.log("Hi magendiran")
 
+const redux =require('redux');
+const Createstore =redux.createStore;
 // Action
 // 1.Action  is the  only way  your  application can interact with the store(manage the state)
 // 2.Action carry some Information from your application to Redux store
@@ -10,6 +12,7 @@ console.log("Hi magendiran")
 
 
 // Store
+// Responsibilities
 // 1.  one Store for Entire Application 
 // 2.Allow  access to State via Getstate()
 // 3.Allow update  to be updated via dispatch(action)
@@ -23,6 +26,7 @@ console.log("Hi magendiran")
 const Buy_cake ='Buy_cake'
 
  function Buycake(){
+     debugger;
      return{
                   type: Buy_cake,
             info :'First redux action'
@@ -40,8 +44,22 @@ const reducer =(state=Inittialstate,action)=>{
 switch(action.type){
     case Buy_cake:return{
         ...state,
-        cake :cake -1
+        cake :state.cake -1
     }
     default :return state
 }
 }
+
+
+const Stores =Createstore(reducer)
+console.log('Inittialstate',Stores.getState())
+ Stores.subscribe(()=>{console.log('update state sub',Stores.getState())})
+const unsubscribe = Stores.subscribe(()=>{console.log('update state',Stores.getState())})
+
+Stores.dispatch(Buycake())
+Stores.dispatch(Buycake())
+Stores.dispatch(Buycake())
+Stores.dispatch(Buycake())
+
+
+unsubscribe();
